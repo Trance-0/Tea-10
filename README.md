@@ -1,2 +1,2 @@
 # Tea-10
-A time tracker app better than dalio
+Algorithm would always be your best friend, you can never escape from this digital ocean.

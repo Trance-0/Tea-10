@@ -16,7 +16,9 @@ public class L77_1 {
                 return;
             }
             for(int i=start;i<=n;i++) {
+                // [1],[2],[3]
                 to_merge.add(i);
+                // [1,2],[1,3],[1,4]
                 merge(result, to_merge, i+1, n, k-1);
                 to_merge.remove(to_merge.size()-1);
             }

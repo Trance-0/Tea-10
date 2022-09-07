@@ -1,11 +1,8 @@
 package medium;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
-
-import javax.tools.SimpleJavaFileObject;
 
 public class L1631_1 {
     // new path to search

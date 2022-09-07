@@ -1,4 +1,4 @@
-import java.time.LocalDate;
+package medium;
 
 public class L915_1 {
     /*

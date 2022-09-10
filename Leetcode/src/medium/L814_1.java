@@ -1,3 +1,4 @@
+package medium;
 public class L814_1 {
     /**
      * Definition for a binary tree node.

@@ -79,7 +79,8 @@ a=[-2,-2,-1]
 b=[-5,0,2]
 c=[0.64997789688276,10.028834864209,0.64997789688276]
 d=[2,2,9]
-print(get_unit_vector(cross_product([3,3,3],[0,0,2])))
+print(get_unit_vector(cross_product([1,3,5],[1,0,5])))
+# print(get_unit_vector(cross_product([3,3,3],[0,0,2])))
 # print(distance_between_vectors(c,d))
 # print(length_of_vector(cross_product(subtract_vector(d,c),subtract_vector(d,b))))
 # print(proj_a_of_b(a,b))

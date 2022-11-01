@@ -18,10 +18,8 @@ public class L1797_1 {
         }
         
         public void renew(String tokenId, int currentTime) {
-            if(tokens.keySet().contains(tokenId)){
-                if(tokens.remove(tokenId)>currentTime){
+            if(tokens.keySet().contains(tokenId)&&tokens.remove(tokenId)>currentTime){
                 tokens.put(tokenId, currentTime+time);
-                }
             }
         }
         

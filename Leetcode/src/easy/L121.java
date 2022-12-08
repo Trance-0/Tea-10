@@ -9,4 +9,4 @@
         }
         return highest_profit;
     }
-}s
+}

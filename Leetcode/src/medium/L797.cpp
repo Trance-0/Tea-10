@@ -1,43 +1,28 @@
-#include <bits/stdc++.h>;
+#include <bits/stdc++.h>
 using namespace std;
 class Solution {
 public:
+// this is acyclic graph, or you need to test for repetition
     vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph) {
-        int n = 0;
-        n = graph.size();
-        vector<vector<int>> result;
-        // I will use dfs
-        vector<int> depth;
-        vector<bool> arr;
-        for (int i = 0; i < n; i++) {
-            arr.push_back(false);
-        }
-        arr[0] = true;
+        int n;
+        n=graph.size();
+        vector<vector<int>>result;
+ //I will use dfs
+        vector<int>depth;
         depth.push_back(0);
-        dfs(n - 1, arr, depth, graph, result);
+        dfs(0,n-1,depth,graph,result);
         return result;
     }
-    void dfs(int end, vector<bool>& hist, vector<int>& depth,
-        vector<vector<int>>& graph, vector<vector<int>> result) {
+    void dfs(int cur,int end,vector<int>&depth,vector<vector<int>>& graph,vector<vector<int>>& result){
         // the base case;
-        if (depth.back() == end) {
-            ;
+        if(cur==end){;
             result.push_back(depth);
             return;
         }
-        for (int i : graph[depth.back()]) {
-            if (!hist[i]) {
-                hist[i] = true;
-                depth.push_back(i);
-                dfs(end, hist, depth, graph, result);
-                depth.pop_back();
-                hist[i] = false;
-            }
+        for (int i:graph[cur]){
+               depth.push_back(i);
+               dfs(i,end,depth,graph,result);
+               depth.pop_back();
         }
     }
 };
-int main() {
-    Solution a;
-    vector<vector<int>> graph;
-    std::cout << allPathsSourceTarget(graph);
-}

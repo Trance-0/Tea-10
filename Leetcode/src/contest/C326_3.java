@@ -1,3 +1,4 @@
+package contest;
 class C326_3 {
     public int minimumPartition(String s, long k) {
         // if(s.length()==1&&s.charAt(0)==48&&k==1){

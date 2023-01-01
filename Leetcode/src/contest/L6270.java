@@ -1,3 +1,4 @@
+package contest;
 public class L6270 {
     public int takeCharacters(String s, int k) {
         // this is window slide

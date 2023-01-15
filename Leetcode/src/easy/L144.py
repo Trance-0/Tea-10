@@ -6,7 +6,16 @@ class TreeNode(object):
         self.right = right
 class Solution(object):
     def preorderTraversal(self, root):
+        result=[]
         """
         :type root: TreeNode
         :rtype: List[int]
         """
+        self.helper(root,result)
+        return result
+        
+    def helper(self,root,result):
+        if(root!=None):
+            result.append(root)
+        self.helper(root.left,result)
+        self.helper(root.right,result)

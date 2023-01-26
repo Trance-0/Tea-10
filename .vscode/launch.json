@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch C329_1",
+            "request": "launch",
+            "mainClass": "contest.C329_1",
+            "projectName": "Tea-10_5558793c"
+        },
+        {
+            "type": "java",
             "name": "Launch B328_3",
             "request": "launch",
             "mainClass": "contest.B328_3",

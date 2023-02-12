@@ -17,4 +17,18 @@ public class Solution {
             nums[end-i]=swap;
         }
     }
+
+    public static void main(String[] args) {
+        String temp="lalallalalla lala     alalal ";
+        String[] split=temp.split("\\s+");
+        for(String x: split){
+            System.out.println(x);
+        }
+        System.out.println(split.length);
+        // for(int[]num:array){
+        //     for(int i:num){
+        //         sum+=i;
+        //     }
+        // }
+    }
 }

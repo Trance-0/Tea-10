@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch C334_4",
+            "request": "launch",
+            "mainClass": "contest.C334_4",
+            "projectName": "Tea-10_5558793c"
+        },
+        {
+            "type": "java",
+            "name": "Launch C334_3",
+            "request": "launch",
+            "mainClass": "contest.C334_3",
+            "projectName": "Tea-10_5558793c"
+        },
+        {
+            "type": "java",
+            "name": "Launch C334_1",
+            "request": "launch",
+            "mainClass": "contest.C334_1",
+            "projectName": "Tea-10_5558793c"
+        },
+        {
+            "type": "java",
             "name": "Launch C333_2",
             "request": "launch",
             "mainClass": "contest.C333_2",
